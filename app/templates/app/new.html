@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<style>
+
+    body{
+        background: grey;
+    }
+
+    .login{
+        border: 1px solid black;
+        width: 400px;
+        height: 500px;
+        background: url('https://media.istockphoto.com/id/1273381718/photo/business-and-finance-concept-looking-up-at-modern-high-ride-buildings-in-financial-district.jpg?s=612x612&w=0&k=20&c=QdEVCfl5M1fdizKY1iwt6FiDw7EE2YQBOhynmMX9G8Y=');
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        margin: 40px auto;
+    }
+
+    form{
+        display: block;
+        box-sizing: border-box;
+        padding: 40px;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: brightness(40%);
+        flex-direction: column;
+        display: flex;
+        gap: 5px;
+    }
+
+    h1{
+       font-weight: normal;
+       font-size: 30px;
+       text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+       margin-bottom: 60px;
+    }
+
+    label {
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding-left: 10px;
+    }
+
+    input{
+        background: rgba(255, 255, 255, 0.3);
+        height: 40px;
+        line-height: 40px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        padding: 0px 20px;
+        border: none;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    button{
+        background: rgb(45, 126, 231);
+        width: 300px;
+        height: 40px;
+        line-heigth: 40px;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 20px;
+        margin: 10px auto;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    button:active{
+        box-shadow: 2px 2px 4px white;
+    }
+
+</style>
+<body>
+    <div class="login">
+        <form>
+            <h1>Log In</h1>
+            <label>Username</label>
+            <input type="text">
+            <label>Password</label>
+            <input type="password">
+            <button><a href="http://127.0.0.1:8000/home/" style="color: white; text-decoration: none;">Sumbit</a></button>
+        </form>
+    </div>
+</body>
+</html>

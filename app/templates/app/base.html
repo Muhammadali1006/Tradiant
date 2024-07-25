@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tradiant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container-1 {
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 80px 0px;
+    }
+
+    .header_img {
+        width: 530px;
+        transition: 4s;
+    }
+
+    .header_img:hover {
+        transform: rotate(180deg);
+    }
+
+    h1{
+        color: #000000;
+        font-family: DM Sans;
+        font-size: 67px;
+        font-weight: 700;
+        line-height: 87.23px;
+        text-align: left;
+    }
+
+    .black_btn{
+        background-color: black;
+        color: white;
+        font-family: DM Sans;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36.46px;
+        text-align: left;
+        padding: 6px 14px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .black_btn a{
+        color: white;
+    }
+
+    .black_btn a:hover{
+        color: black;
+        transition: 1.4s;
+    }
+
+    .white_btn a{
+        color: black;
+    }
+
+    .white_btn a:hover{
+        color: white;
+        transition: 1.4s;
+    }
+
+    .white_btn{
+        background-color: white;
+        color: black;
+        font-family: DM Sans;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36.46px;
+        text-align: left;
+        padding: 6px 14px;
+        margin: 0px 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .black_btn:hover{
+        background-color: white;
+        color: black;
+        transition: 1.6s;
+        box-shadow: 4px 4px 10px black;
+    }
+
+    .white_btn:hover{
+        background-color: black;
+        color: white;
+        transition: 1.6s;
+        box-shadow: 4px 4px 10px grey,
+                 2px 3px 10px white inset;
+    }
+
+    .img_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        //styleName: Heading/3;
+        font-family: Epilogue;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    p{
+        color: #5C7184;
+        //styleName: Body/M;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+
+     h4{
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: center;
+     }
+
+     .blue_a{
+        color: #2196F3;
+        //styleName: Button;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+
+     .card_1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+        margin: 100px auto;
+     }
+
+     .ofis_img{
+        width: 544px;
+        height: 408px;
+        gap: 0px;
+        border-radius: 16px;
+        opacity: 0px;
+        transition: 5s;
+     }
+
+     .ofis_img:hover{
+        border-radius: 50%;
+     }
+
+     h3{
+        //styleName: Heading/3;
+        font-family: Epilogue;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 64px;
+        text-align: center;
+     }
+
+     .Our_p{
+        max-width: 480px;
+        //styleName: Body/M;
+        font-family: Poppins;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+     }
+
+     .text_box .blue_a{
+        display: flex;
+        justify-content: left;
+     }
+
+    .text_box h3{
+        text-align: left;
+    }
+
+    .btn_blue{
+        background: #2196F3;
+        color: white;
+        //styleName: Button;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        display: flex;
+        margin: 10px auto;
+        padding: 20px 35px;
+        border: none;
+        border-radius: 12px;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .btn_blue:hover{
+        background: white;
+        color: #2196F3;
+        box-shadow: 4px 4px 10px #2196F3,
+                2px 4px 10px #2196F3 inset;
+        text-shadow: none;
+        transition: 1.5s;
+    }
+
+    h5{
+        //styleName: Button;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+   .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 400px;
+    justify-content: start;
+  }
+
+  .card {
+    align-items: flex-end;
+    background-size: cover;
+    border-radius: .75rem;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    cursor: pointer;
+    display: flex;
+    margin: 0 10px;
+    overflow: hidden;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    width: 80px;
+  }
+
+  .card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .card > .row > .icon {
+    align-items: center;
+    background: #223;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    width: 50px;
+  }
+
+  .card > .row > .description {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(30px);
+    transition: all .3s ease;
+    transition-delay: .3s;
+    width: 520px;
+  }
+
+  .description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+  }
+
+  .description h4 {
+    text-transform: uppercase;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + label {
+    width: 600px;
+  }
+
+  input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  .card[for="c1"] {
+    background-image: url('https://media.licdn.com/dms/image/D4D12AQGcDynr1ol10A/article-inline_image-shrink_1500_2232/0/1695725985024?e=1726704000&v=beta&t=HWk9mGRgYtmGoGxEOPdCV8N9DLLKRCCKmCy0H-nfsaU');
+  }
+
+  .card[for="c2"] {
+    background-image: url('https://karmod.uz/images/resimler/prefabrik-ofis---portativ-ofis--galereya--rasmlar-19.jpg');
+  }
+
+  .card[for="c3"] {
+    background-image: url('https://image.made-in-china.com/2f0j00ouPbgphrJzcK/Modern-Design-Luxury-Office-Table-Executive-Offical-Desk-Wooden-Furniture.webp');
+  }
+
+  .card[for="c4"] {
+    background-image: url('https://image.made-in-china.com/2f0j00UpVkMnJHEaqK/Modern-Design-Luxury-Office-Desk-Boss-Table-Wooden-Office-Furniture.webp');
+  }
+
+
+
+
+</style>
+<body>
+{% load static %}
+    <header class="container-1">
+        <div>
+           <h1>The World’s <br>Fastest Growing <br> Crypto Web App </h1>
+            <div>
+                <button class="black_btn"><a href="http://127.0.0.1:8000/home/LoginIN/" style="text-decoration: none;">Sign In</a></button>
+                <button class="white_btn"><a href="http://127.0.0.1:8000/home/LoginIN/" style="text-decoration: none;">Sign Up</a></button>
+            </div>
+        </div>
+        <img class="header_img" src="{%static '/img/rasm.png'%}">
+    </header>
+    <main class="container-1">
+        <section>
+            <img style="display: flex; margin: 100px auto;" src="{%static '/img/Logos.png'%}">
+        </section>
+        <section>
+            <h2>A trading partner you can trust</h2>
+            <p>At Tradiant, we rigorously focus on quality and transparency. Our order execution quality is independently <br> monitored. Order execution with high quality means: you save money with every investment you make with Tradiant.</p>
+        </section>
+        <section>
+            <div class="card_1">
+                 <div>
+                     <img style="display: flex; margin: 0px auto;" src="{%static '/img/flash.png'%}">
+                    <h4>Quality execution on every trade</h4>
+                    <p>Backed by multiple analyzes and precise algorithms <br> providing quality execution decisions on every trade. <br> Guarantee your comfort and perfection in making decisions.</p>
+                    <a href="#" class="blue_a">View our execution scoreboard > </a>
+                </div>
+                <div>
+                    <img style="display: flex; margin: 0px auto;" src="{%static '/img/search-status.png'%}">
+                    <h4>Transparent & competitive pricing</h4>
+                    <p>Provides transparency Pricing Emphasizes Value, not Price. <br> As price becomes clearer to everyone in the market, each <br> competitor's value also comes into sharper focus.</p>
+                    <a href="#" class="blue_a">View pricing and execution advantage > </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card_1">
+                <img class="ofis_img" src="https://image.made-in-china.com/2f0j00SPUblYftqDqo/White-Boss-Manager-Office-Table-Company-Home-Office-Furniture-Set-Computer-Working-MDF-L-Shape-Office-Desk-with-Cabinet.webp">
+                <div class="text_box">
+                    <h3>Our Vision</h3>
+                    <p class="Our_p">Our vision is to become a trusted advisor, intermediary, and partner to assist customers in determining financial strategies in the capital market and Become a professional reinsurance broker with a global reputation</p>
+                    <a href="#" class="blue_a">See More ></a>
+                </div>
+            </div>
+            <div class="card_1">
+                <div class="text_box">
+                    <h3>Our Mission</h3>
+                    <p class="Our_p">Providing excellent service from risk placement to settlement of compensation in the interest of obtaining the best capital market results. Maintain the profitability of each user with the aim of meeting the expectations of each user</p>
+                    <a href="#" class="blue_a">See More ></a>
+                </div>
+                <img class="ofis_img" src="https://s.alicdn.com/@sc04/kf/Hfd4276a5972d4122860b5c9c99eba3c8q.jpg_720x720q50.jpg">
+            </div>
+        </section>
+        <section>
+            <h3>Our Values</h3>
+            <p>Our values are reflected in our product offering and user experience, as well as being embedded in our internal <br> culture and employee experience.</p>
+        </section>
+        <section>
+                <div class="wrapper">
+                    <div class="container">
+                      <input type="radio" name="slide" id="c1" checked>
+                      <label for="c1" class="card">
+                        <div class="row">
+                          <div class="icon">1</div>
+                          <div class="description">
+                            <h4>OFIS</h4>
+                            <p>Winter has so much to offer - creative activities</p>
+                          </div>
+                        </div>
+                      </label>
+
+                      <input type="radio" name="slide" id="c2">
+                      <label for="c2" class="card">
+                        <div class="row">
+                          <div class="icon">2</div>
+                          <div class="description">
+                            <h4>Digital Technology</h4>
+                            <p>Gets better every day - stay tunned</p>
+                          </div>
+                        </div>
+                      </label>
+
+                      <input type="radio" name="slide" id="c3">
+                      <label for="c3" class="card">
+                        <div class="row">
+                          <div class="icon">3</div>
+                          <div class="description">
+                            <h4>Globalization</h4>
+                            <p>Help people all over the world</p>
+                          </div>
+                        </div>
+                      </label>
+
+                      <input type="radio" name="slide" id="c4">
+                      <label for="c4" class="card">
+                        <div class="row">
+                          <div class="icon">4</div>
+                          <div class="description">
+                            <h4>New technologies</h4>
+                            <p>Space engineering becomes more and more advanced</p>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+        </section>
+        <section>
+            <h2>All of this and much more dedicated from <br> <b style="color: #2196F3">Tradiant</b> to your success</h2>
+            <a style="text-decoration: none;" href="http://127.0.0.1:8000/home/why/"><button class="btn_blue">Trade with Us</button></a>
+        </section>
+    </main>
+    <footer style="background: #F0F3F5;">
+        <div style="display: flex; justify-content: space-around; margin-top: 100px; padding: 72px 0px;" class="container-1">
+            <div>
+                <img style="display: flex; margin: 0px auto;" src="{%static '/img/Logo.png'%}">
+                <p style="text-align: left;">Maximize your investment in the capital <br> market world with the convenience and <br> various features provided by Tradiant.</p>
+                <p style="text-align: left; font-size: 18px;">Unduh Aplikasi</p>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="width: 130px; height: 50px; background: black; display: flex; align-items: center; border-radius: 10px;">
+                        <img style="width: 50px; border-radius: 10px;" src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg">
+                        <p style="color: white; text-align: left; font-size: 10px; line-height: 16px;">Download on the <br> App Store</p>
+                    </div>
+                    <div style="width: 130px; height: 50px; background: black; display: flex; align-items: center; border-radius: 10px;">
+                        <img style="width: 50px; border-radius: 10px;" src="https://img.freepik.com/premium-photo/black-background-with-colorful-image-google-play-icon_1163725-758.jpg">
+                        <p style="color: white; text-align: left; font-size: 10px; line-height: 16px;">GET IT ON <br> Google Play</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>Companies</h5>
+                <p style="text-align: left;">About Us</p>
+                <p style="text-align: left;">Journey</p>
+                <p style="text-align: left;">Blog</p>
+                <p style="text-align: left;">Contact</p>
+                <p style="text-align: left;">Help</p>
+            </div>
+            <div>
+                <h5>Resources</h5>
+                <p style="text-align: left;">About Us</p>
+                <p style="text-align: left;">Journey</p>
+                <p style="text-align: left;">Blog</p>
+                <p style="text-align: left;">Contact</p>
+                <p style="text-align: left;">Help</p>
+            </div>
+            <div>
+                <h5>Help</h5>
+                <p style="text-align: left;">House Rules</p>
+                <p style="text-align: left;">Our Terms</p>
+                <p style="text-align: left;">Privacy & Policy</p>
+            </div>
+            <div>
+                <h5>Contact Us</h5>
+                <p style="text-align: left;">☎ (480) 555-0103</p>
+                <p style="text-align: left;">📬 6391 Elgin St.Celina, Delaware 10299</p>
+                <p style="text-align: left;">📧 hub@tradiant.com</p>
+            </div>
+        </div>
+    </footer>
+    <label style="display: flex; justify-content: center; margin: 30px auto;">Copyright @Tradiant 2022. All Rights Reserved.</label>
+</body>
+</html>
